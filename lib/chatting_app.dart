@@ -1,3 +1,4 @@
+import 'package:chatting_app/config/themes/app_themes.dart';
 import 'package:chatting_app/core/routes/app_routes.dart';
 import 'package:chatting_app/core/routes/router.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +18,8 @@ class ChattingApp extends StatelessWidget {
 
         onGenerateRoute: RoutesManager.router,
         initialRoute: AppRoutes.login,
-        // theme: ThemeManager.light,
-        // darkTheme: ThemeManager.dark,
+        theme: ThemeManager.light,
+        darkTheme: ThemeManager.dark,
         locale: Locale("en"),
       ),
 
