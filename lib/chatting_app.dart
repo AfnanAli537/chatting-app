@@ -13,9 +13,8 @@ class ChattingApp extends StatelessWidget {
       designSize:Size(393, 841) ,
       splitScreenMode: true,
       minTextAdapt: true,
-      builder:(context, _)=>   MaterialApp(
+      builder:(context, _)=> MaterialApp(
         debugShowCheckedModeBanner: false,
-
         onGenerateRoute: RoutesManager.router,
         initialRoute: AppRoutes.login,
         theme: ThemeManager.light,
