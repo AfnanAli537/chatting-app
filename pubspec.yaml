@@ -13,6 +13,7 @@ dependencies:
   flutter_native_splash: ^2.4.6
   flutter_screenutil: ^5.9.3
   flutter_launcher_icons: ^0.14.4
+  lottie: ^3.3.2
 
 dev_dependencies:
   flutter_test:
