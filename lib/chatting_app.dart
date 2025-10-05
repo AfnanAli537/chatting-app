@@ -16,7 +16,7 @@ class ChattingApp extends StatelessWidget {
       builder:(context, _)=> MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesManager.router,
-        initialRoute: AppRoutes.login,
+        initialRoute: AppRoutes.onboarding,
         theme: ThemeManager.light,
         darkTheme: ThemeManager.dark,
         locale: Locale("en"),
