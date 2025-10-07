@@ -107,7 +107,7 @@ class ThemeManager {
       // Elevated Button Theme
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.grey700,
+          backgroundColor: AppColors.primaryColor,
           foregroundColor: AppColors.black,
           elevation: 2,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
