@@ -93,15 +93,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
           AppStrings.explore,
           style: textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
-            color: AppColors.black, 
+            color: AppColors.black,
           ),
         ),
         backgroundColor: theme.appBarTheme.backgroundColor,
         centerTitle: true,
         elevation: 0.5,
-        iconTheme: const IconThemeData(
-          color: AppColors.black,
-        ), 
+        iconTheme: const IconThemeData(color: AppColors.black),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -138,9 +136,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                           : null,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                        ),
+                        borderSide: const BorderSide(color: AppColors.black),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
@@ -150,9 +146,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                        ),
+                        borderSide: const BorderSide(color: AppColors.black),
                       ),
                       contentPadding: theme.inputDecorationTheme.contentPadding,
                     ),
@@ -169,10 +163,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: IconButton(
-                    icon: const Icon(
-                      Icons.search,
-                      color: AppColors.white,
-                    ),
+                    icon: const Icon(Icons.search, color: AppColors.white),
                     onPressed: _searchUser,
                   ),
                 ),
@@ -224,13 +215,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
                             ],
                           ),
                           child: ListTile(
-                            leading: CircleAvatar(
-                              backgroundColor:
-                                  AppColors.black,
+                            leading: Container(
+                              width: 40,
+                              height: 40,
+                              decoration: const BoxDecoration(
+                                color: AppColors.grey300,
+                                shape: BoxShape.circle,
+                              ),
                               child: const Icon(
                                 Icons.person,
-                                color: AppColors
-                                    .white,
+                                color: AppColors.grey600,
                               ),
                             ),
                             title: Text(
@@ -249,21 +243,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
                                 ),
                                 decoration: BoxDecoration(
                                   color: isAdded
-                                      ? AppColors
-                                            .white
-                                      : AppColors
-                                            .black,
-                                  border: Border.all(
-                                    color: AppColors.black,
-                                  ),
+                                      ? AppColors.white
+                                      : AppColors.black,
+                                  border: Border.all(color: AppColors.black),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Text(
                                   isAdded ? AppStrings.cancel : AppStrings.add,
                                   style: textTheme.labelMedium?.copyWith(
                                     color: isAdded
-                                        ? AppColors
-                                              .black
+                                        ? AppColors.black
                                         : AppColors.white,
                                     fontWeight: FontWeight.w500,
                                   ),
