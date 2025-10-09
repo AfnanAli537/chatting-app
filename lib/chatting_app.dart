@@ -19,6 +19,9 @@ class ChattingApp extends StatelessWidget {
         initialRoute: AppRoutes.onboarding,
         theme: ThemeManager.light,
         darkTheme: ThemeManager.dark,
+        themeMode: ThemeMode.light,
+        themeAnimationCurve: Curves.fastOutSlowIn,
+        themeAnimationDuration:const Duration(milliseconds:1500 ),
         locale: Locale("en"),
       ),
 
