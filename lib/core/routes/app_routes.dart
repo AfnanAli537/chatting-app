@@ -4,4 +4,8 @@ abstract class AppRoutes{
   static const String profile = '/profile';
   static const String notification = '/notification';
   static const String main = '/main';
+  static const String onboarding = '/onboarding';
+  static const String home = "/Home";
+  static const String chat ="/chat";
+    static const String create ="/create_group";
 }

@@ -9,21 +9,23 @@ class ChattingApp extends StatelessWidget {
   const ChattingApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
     return OverlaySupport.global(
       child: ScreenUtilInit(
-        designSize: Size(393, 841),
-        splitScreenMode: true,
-        minTextAdapt: true,
-        builder: (context, _) => MaterialApp(
-          debugShowCheckedModeBanner: false,
-          onGenerateRoute: RoutesManager.router,
-          // initialRoute: AppRoutes.login,
-          initialRoute: AppRoutes.main,
-          theme: ThemeManager.light,
-          // darkTheme: ThemeManager.dark,
-          locale: Locale("en"),
-        ),
+      designSize:Size(393, 841) ,
+      splitScreenMode: true,
+      minTextAdapt: true,
+      builder:(context, _)=> MaterialApp(
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute: RoutesManager.router,
+        initialRoute: AppRoutes.onboarding,
+        theme: ThemeManager.light,
+        darkTheme: ThemeManager.dark,
+        themeMode: ThemeMode.light,
+        themeAnimationCurve: Curves.fastOutSlowIn,
+        themeAnimationDuration:const Duration(milliseconds:1500 ),
+        locale: Locale("en"),
+      ),
       ),
     );
   }
